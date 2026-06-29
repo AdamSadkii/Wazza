@@ -70,7 +70,8 @@ The wand enclosure is 3D printed from PLA or resin filament and designed to fit 
 
 ## Schematic
 
-<img width="1186" height="839" alt="Screenshot 2026-06-28 173202" src="https://github.com/user-attachments/assets/bb8f7f90-b052-41bf-b869-60ffed1e88cf" />
+<img width="1046" height="726" alt="image" src="https://github.com/user-attachments/assets/ed5b7652-b10a-4a1f-a075-88a767a4fef8" />
+
 
 ## Future Enhancements
 
