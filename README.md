@@ -1,4 +1,4 @@
-# Stardance Wand
+# Wazza - Magic in The Air
 
 ## Project Overview
 
