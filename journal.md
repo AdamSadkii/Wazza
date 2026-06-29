@@ -29,6 +29,11 @@ Tomorrow, I will get to the PCB and hopefully get most of it done. Although it's
 This feels like a major milestone. The schematic is the blueprint for everything that comes next. Seeing all the connections laid out clearly gives me confidence that the hardware design is sound. Time to bring it to life on the PCB.
 
 
+
+
+
+
+
 ## Organizing PCB - Day 6/29/26 (Hour 1)
 
 I'm organizing the PCB! Currently splitting each component on its own but we're figuring it out, though the components are a little hard to figure out, it's okay! 
