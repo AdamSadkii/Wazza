@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Stardance is a gesture-controlled AI wand that responds to hand motions in the air. By waving the wand with specific gestures, users trigger real-time API calls to Claude AI, enabling voice and motion-based interaction with large language models. The wand combines hardware gesture recognition with cloud AI to create an intuitive, futuristic interface for accessing AI capabilities on the fly.
+Stardance is a gesture-controlled AI wand that responds to hand motions in the air. By waving the wand with specific gestures, users trigger real-time API calls to AI Agents, enabling voice and motion-based interaction with large language models. The wand combines hardware gesture recognition with cloud AI to create an intuitive, futuristic interface for accessing AI capabilities on the fly.
 
 ## How It Works
 
