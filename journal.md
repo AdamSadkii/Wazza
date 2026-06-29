@@ -39,3 +39,11 @@ This feels like a major milestone. The schematic is the blueprint for everything
 I'm organizing the PCB! Currently splitting each component on its own but we're figuring it out, though the components are a little hard to figure out, it's okay! 
 
 <img width="773" height="580" alt="image" src="https://github.com/user-attachments/assets/0136daff-c0d4-490e-9324-004016972512" />
+
+## Schematic Fix - Day 6/29/26 (Hours 2-3)
+
+I discovered a major error on the PCB layout where resistors R4 and R5 were both connected directly to the 3.3V line, which would have broken the communication loop. After two hours of troubleshooting, I corrected the wiring paths and utilized several pins that were previously ignored. This process exposed a widespread series of errors throughout the schematic, requiring another two hours of focused adjustments. While the rework was incredibly tedious, tracking down and correcting those design flaws was deeply rewarding.
+
+<img width="1046" height="726" alt="image" src="https://github.com/user-attachments/assets/cbf04ef8-8eba-41d3-afd4-e83758417d50" />
+<img width="846" height="903" alt="image" src="https://github.com/user-attachments/assets/432b5a6e-e436-469c-a594-33069c1733a3" />
+<img width="1204" height="617" alt="image" src="https://github.com/user-attachments/assets/ba185da1-e040-45e8-b859-ee668cf3fa19" />
