@@ -1,4 +1,4 @@
-## Schematic Complete - Day 6/28/26
+## Schematic Complete - Day 6/28/26 (5h58min)
 
 ### Overview
 Finally finished the schematic! Coming into this schematic, I knew I wanted to focus on one thing: the microcontroller as the main component. However, in hopes of organization, I thought otherwise and considered splitting things up.
