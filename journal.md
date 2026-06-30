@@ -89,3 +89,9 @@ I decided for a neater version so I resorted to different page sheets and made i
 <img width="850" height="807" alt="image" src="https://github.com/user-attachments/assets/6df10024-a6bf-439e-b84b-19ac6f012a18" />
 <img width="822" height="405" alt="image" src="https://github.com/user-attachments/assets/b78ec270-6ca7-4f70-bac3-0b2b4c59ed3d" />
 <img width="1397" height="628" alt="image" src="https://github.com/user-attachments/assets/b5b1da4e-8f59-4ae5-a1c7-1d574171fe0c" />
+
+## Schematic Rewire - Day 6/30/26 (Hours 4-5)
+To end the Schematic Rewire (finally..) I finished my OLED and Audio Interface, two important components connecting to my ESP32. The OLED will display info and will later be programmed to do so, meanwhile the Audio Interface will do the same in an audio format. 
+
+<img width="925" height="706" alt="image" src="https://github.com/user-attachments/assets/58ebe590-3e1b-46ac-b8a0-e10366c60dbe" />
+<img width="830" height="665" alt="image" src="https://github.com/user-attachments/assets/8885cc1e-0c6c-4af7-bfda-38c51fddb81e" />
