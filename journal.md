@@ -47,3 +47,17 @@ I discovered a major error on the PCB layout where resistors R4 and R5 were both
 <img width="1046" height="726" alt="image" src="https://github.com/user-attachments/assets/cbf04ef8-8eba-41d3-afd4-e83758417d50" />
 <img width="846" height="903" alt="image" src="https://github.com/user-attachments/assets/432b5a6e-e436-469c-a594-33069c1733a3" />
 <img width="1204" height="617" alt="image" src="https://github.com/user-attachments/assets/ba185da1-e040-45e8-b859-ee668cf3fa19" />
+
+
+## Journal Day 2 - PCB Almost Done? (Hours: 3)
+
+
+Today was very productive yet exhausting. I made the big step to creating my first ever PCB -- however, a huge roadblock occured around my OLED screen, the wiring led to the 3.3v line on both components R4 and R5 opposed to the SLC and SDA Line, so I had to rewire my schematic's components all over again which took me a couple hours until I ran a successful check. Eventually, I got to my PCB and modelled how I want wazza to be -- from the USB-C to the OLED screen. 
+
+<img width="1071" height="853" alt="image" src="https://github.com/user-attachments/assets/6b969f1c-960b-40bd-b3f9-83a89c678b7d" />
+<img width="492" height="397" alt="image" src="https://github.com/user-attachments/assets/6811b899-7b8a-4f35-92b5-3d110f4a0ca5" />
+
+Doing so made me realize I might have to rework my ESP32 as I may have used the wrong module -- though it's not much of a hard fix I just have to redesignate the pins to the correct wiring. Additionally, I NEED to add Net Lists to make my Schematic much more smoother. 
+
+I am a bit unsure on what to do, but I will get most of this done tomorrow, and of course, jobs not finished, all thats left is to submit the CAD, then we can ship, and HOPEFULLY get it accepted. 
+
