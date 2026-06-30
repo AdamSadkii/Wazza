@@ -51,20 +51,34 @@ I discovered a major error on the PCB layout where resistors R4 and R5 were both
 
 ## Journal Day 6/29/26 - PCB Almost Done? (Hours: 3)
 
+PCB Layout Started - Day 6/30/26
 
-Today was very productive yet exhausting. I made the big step to creating my first ever PCB -- however, a huge roadblock occured around my OLED screen, the wiring led to the 3.3v line on both components R4 and R5 opposed to the SLC and SDA Line, so I had to rewire my schematic's components all over again which took me a couple hours until I ran a successful check. Eventually, I got to my PCB and modelled how I want wazza to be -- from the USB-C to the OLED screen. 
+## Overview
+
+Today was incredibly productive yet absolutely exhausting. I took the massive leap into creating my first-ever physical PCB layout! Moving from the abstract schematic canvas to actual component footprints makes the wand feel real, though it definitely brought some brutal troubleshooting with it.
+
+## Design Decisions & Troubleshooting
+
+I hit a major roadblock early on regarding the OLED screen and the IMU pull-up resistors. During my initial layout check, I realized my wiring accidentally tied both sides of $R4$ and $R5$ directly to the +3.3V line, completely missing the actual SCL and SDA lines!Instead of moving forward with a broken bus, I paused and forced myself to rewire those schematic components properly. It took a couple of hours of careful tracing, but I finally re-ran the check successfully. Once the schematic was cleared, I imported it into the PCB editor and successfully modeled the initial physical flow of the wand—stretching all the way from the USB-C port to the OLED screen placement.
+
+## Architecture
+
+As the layout began coming together, the physical constraints forced me to re-evaluate my component choices:
+
+- ESP32 Module: Looking at the footprint placement, I realized I might have utilized the wrong specific module variant. Thankfully, it's not a catastrophic fix—I just need to swap the symbol/footprint and re-designate the pins to match my existing wiring routing.
+- Net Labels: Moving forward, I need to heavily integrate net labels rather than drawing raw local wires. It will make updating the schematic and updating the PCB track layout infinitely smoother.What I LearnedCatching a massive I2C pull-up mistake now instead of after fabrication taught me why electrical checks are so critical. A few hours of frustration today saved weeks of waiting on a broken, un-fixable board later.
+
+## Next Steps
+
+Tomorrow is all about fixing that ESP32 module variant, cleaning up the routing, and finalizing the board outline. There is still a bit of uncertainty about the tight layout, but the goal is to get the CAD fully submitted so we can ship the design files out for manufacturing. Job's not finished—let's get this accepted!
 
 <img width="1071" height="853" alt="image" src="https://github.com/user-attachments/assets/6b969f1c-960b-40bd-b3f9-83a89c678b7d" />
 <img width="492" height="397" alt="image" src="https://github.com/user-attachments/assets/6811b899-7b8a-4f35-92b5-3d110f4a0ca5" />
 
-Doing so made me realize I might have to rework my ESP32 as I may have used the wrong module -- though it's not much of a hard fix I just have to redesignate the pins to the correct wiring. Additionally, I NEED to add Net Lists to make my Schematic much more smoother. 
-
-I am a bit unsure on what to do, but I will get most of this done tomorrow, and of course, jobs not finished, all thats left is to submit the CAD, then we can ship, and HOPEFULLY get it accepted. 
-
-
 ## Schematic Rewire WE ALMOST DONE - Day 6/30/26 (Hours 1-2)
 
 Decided to rewire my schematic as I realized I was using the Chip version of the ESP32-S3 and not the actual module version (I chose the ESP32-S3 Mini). Both my sensor interface and power management is done. 
+
 <img width="993" height="776" alt="image" src="https://github.com/user-attachments/assets/c7d27f3a-9e25-431a-a3e0-d09b8278279f" />
 <img width="1069" height="477" alt="image" src="https://github.com/user-attachments/assets/2577eb53-1cc0-46ed-8b8c-29fd74fbe153" />
 
