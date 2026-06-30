@@ -8,3 +8,8 @@
 <img width="1204" height="617" alt="image" src="https://github.com/user-attachments/assets/ba185da1-e040-45e8-b859-ee668cf3fa19" />
 <img width="1071" height="853" alt="image" src="https://github.com/user-attachments/assets/6b969f1c-960b-40bd-b3f9-83a89c678b7d" />
 <img width="492" height="397" alt="image" src="https://github.com/user-attachments/assets/6811b899-7b8a-4f35-92b5-3d110f4a0ca5" />
+
+
+## Hours 1-2 6/30/2026
+<img width="993" height="776" alt="image" src="https://github.com/user-attachments/assets/c7d27f3a-9e25-431a-a3e0-d09b8278279f" />
+<img width="1069" height="477" alt="image" src="https://github.com/user-attachments/assets/2577eb53-1cc0-46ed-8b8c-29fd74fbe153" />
