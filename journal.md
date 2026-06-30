@@ -67,3 +67,11 @@ I am a bit unsure on what to do, but I will get most of this done tomorrow, and 
 Decided to rewire my schematic as I realized I was using the Chip version of the ESP32-S3 and not the actual module version (I chose the ESP32-S3 Mini). Both my sensor interface and power management is done. 
 <img width="993" height="776" alt="image" src="https://github.com/user-attachments/assets/c7d27f3a-9e25-431a-a3e0-d09b8278279f" />
 <img width="1069" height="477" alt="image" src="https://github.com/user-attachments/assets/2577eb53-1cc0-46ed-8b8c-29fd74fbe153" />
+
+## Schematic Rewire So close - Day 6/30/26 (Hours 3-4)
+
+I decided for a neater version so I resorted to different page sheets and made it simpler. This solved my rewiring issue entirely and made it much more simpler. Additionally, I resorted to the ESP32-S3 Mini and was able to complete a successful rewire towards the microcontroller connecting everything at once. 
+
+<img width="850" height="807" alt="image" src="https://github.com/user-attachments/assets/6df10024-a6bf-439e-b84b-19ac6f012a18" />
+<img width="822" height="405" alt="image" src="https://github.com/user-attachments/assets/b78ec270-6ca7-4f70-bac3-0b2b4c59ed3d" />
+<img width="1397" height="628" alt="image" src="https://github.com/user-attachments/assets/b5b1da4e-8f59-4ae5-a1c7-1d574171fe0c" />
