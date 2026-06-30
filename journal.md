@@ -49,7 +49,7 @@ I discovered a major error on the PCB layout where resistors R4 and R5 were both
 <img width="1204" height="617" alt="image" src="https://github.com/user-attachments/assets/ba185da1-e040-45e8-b859-ee668cf3fa19" />
 
 
-## Journal Day 2 - PCB Almost Done? (Hours: 3)
+## Journal Day 6/29/26 - PCB Almost Done? (Hours: 3)
 
 
 Today was very productive yet exhausting. I made the big step to creating my first ever PCB -- however, a huge roadblock occured around my OLED screen, the wiring led to the 3.3v line on both components R4 and R5 opposed to the SLC and SDA Line, so I had to rewire my schematic's components all over again which took me a couple hours until I ran a successful check. Eventually, I got to my PCB and modelled how I want wazza to be -- from the USB-C to the OLED screen. 
