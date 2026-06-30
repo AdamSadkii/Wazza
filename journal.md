@@ -61,3 +61,9 @@ Doing so made me realize I might have to rework my ESP32 as I may have used the 
 
 I am a bit unsure on what to do, but I will get most of this done tomorrow, and of course, jobs not finished, all thats left is to submit the CAD, then we can ship, and HOPEFULLY get it accepted. 
 
+
+## Schematic Rewire WE ALMOST DONE - Day 6/30/26 (Hours 1-2)
+
+Decided to rewire my schematic as I realized I was using the Chip version of the ESP32-S3 and not the actual module version (I chose the ESP32-S3 Mini). Both my sensor interface and power management is done. 
+<img width="993" height="776" alt="image" src="https://github.com/user-attachments/assets/c7d27f3a-9e25-431a-a3e0-d09b8278279f" />
+<img width="1069" height="477" alt="image" src="https://github.com/user-attachments/assets/2577eb53-1cc0-46ed-8b8c-29fd74fbe153" />
