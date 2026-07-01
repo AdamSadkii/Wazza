@@ -95,3 +95,38 @@ To end the Schematic Rewire (finally..) I finished my OLED and Audio Interface, 
 
 <img width="925" height="706" alt="image" src="https://github.com/user-attachments/assets/58ebe590-3e1b-46ac-b8a0-e10366c60dbe" />
 <img width="830" height="665" alt="image" src="https://github.com/user-attachments/assets/8885cc1e-0c6c-4af7-bfda-38c51fddb81e" />
+
+
+## Day 6/30/26 (4hrs 48 min)
+
+### Devlog – June 30, 2026
+
+**Focus:** Complete Schematic Overhaul, Hierarchical Sheets, & Peripheral Integration
+
+Massive milestone hit today. Realized a fundamental mismatch in the central microcontroller component selection and completely overhauled the schematic architecture to transition from a messy, single-page layout to a clean, production-ready multi-sheet design.
+
+#### Accomplishments:
+
+* **Microcontroller Core Correction (Hours 1–2):**
+* Identified a critical error: the schematic originally used the raw ESP32-S3 IC (chip-down) instead of the actual integrated module (**ESP32-S3-MINI-1**).
+* Swapped out the component block, completely saving the project from massive PCB routing headaches later, as the mini module integrates the flash, RAM, and antenna circuitry automatically.
+* Verified that the completed Sensor Interface and Power Management blocks survived the migration.
+
+
+* **Hierarchical Page Sheet Migration (Hours 3–4):**
+* To solve the escalating "spaghetti wire" mess, abandoned the single-page layout and refactored the entire project into individual hierarchical page sheets.
+* This modular approach completely cleared up the wiring bottlenecks and allowed for a seamless, successful master rewire back to the new ESP32-S3 Mini block using clean global labels.
+
+
+* **OLED & Audio Interface Integration (Hours 4–5):**
+* Finalized the schematic wiring for the dual feedback systems: the visual **OLED Display** block and the **I2S Audio Interface** block.
+* Mapped out the display paths to handle future telemetry data readouts and stabilized the I2S audio channels (microphone input and amplifier output) to provide clean audio feedback down the line.
+
+
+
+#### Project Status:
+
+The schematic is officially **100% complete** and fully modularized. Every subsystem—Power, Sensors, OLED, Audio, and LEDs—is cleanly tied back to the ESP32-S3 Mini. Ready to lock it in and move to footprints!
+
+<img width="830" height="665" alt="image" src="https://github.com/user-attachments/assets/8885cc1e-0c6c-4af7-bfda-38c51fddb81e" />
+<img width="1069" height="477" alt="image" src="https://github.com/user-attachments/assets/2577eb53-1cc0-46ed-8b8c-29fd74fbe153" />
