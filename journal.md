@@ -124,9 +124,15 @@ Massive milestone hit today. Realized a fundamental mismatch in the central micr
 
 
 
-#### Project Status:
+#### Project Status 6/30/26:
 
 The schematic is officially **100% complete** and fully modularized. Every subsystem—Power, Sensors, OLED, Audio, and LEDs—is cleanly tied back to the ESP32-S3 Mini. Ready to lock it in and move to footprints!
 
 <img width="830" height="665" alt="image" src="https://github.com/user-attachments/assets/8885cc1e-0c6c-4af7-bfda-38c51fddb81e" />
 <img width="1069" height="477" alt="image" src="https://github.com/user-attachments/assets/2577eb53-1cc0-46ed-8b8c-29fd74fbe153" />
+
+## PCB Organized - Time to Reroute! 7/3/26: (1-2 Hours)
+
+The PCB is finally organized, it's time to reroute and make sure the chip is well done and suited. CADDING IS VERY SOON!!!
+<img width="1202" height="774" alt="image" src="https://github.com/user-attachments/assets/14fcbcb0-96c0-40f7-b20c-ebf5b12b53b5" />
+
