@@ -23,3 +23,7 @@
 ## Hours 4-5 6/30/2026
 <img width="925" height="706" alt="image" src="https://github.com/user-attachments/assets/58ebe590-3e1b-46ac-b8a0-e10366c60dbe" />
 <img width="830" height="665" alt="image" src="https://github.com/user-attachments/assets/8885cc1e-0c6c-4af7-bfda-38c51fddb81e" />
+
+
+## Hours 1-2 7/3/2026
+<img width="1202" height="774" alt="image" src="https://github.com/user-attachments/assets/6b4a1d66-c523-4b3d-a594-7986f72c7741" />
