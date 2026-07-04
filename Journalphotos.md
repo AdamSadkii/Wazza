@@ -27,3 +27,7 @@
 
 ## Hours 1-2 7/3/2026
 <img width="1202" height="774" alt="image" src="https://github.com/user-attachments/assets/6b4a1d66-c523-4b3d-a594-7986f72c7741" />
+
+## Hours 2-3 7/3/2026
+<img width="1164" height="528" alt="image" src="https://github.com/user-attachments/assets/95cae7d1-e5fe-4551-b88b-c0cf5e242411" />
+<img width="775" height="761" alt="image" src="https://github.com/user-attachments/assets/025e0868-9e07-4c6f-9ca2-81a403e31ce1" />
