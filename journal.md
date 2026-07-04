@@ -136,3 +136,8 @@ The schematic is officially **100% complete** and fully modularized. Every subsy
 The PCB is finally organized, it's time to reroute and make sure the chip is well done and suited. CADDING IS VERY SOON!!!
 <img width="1202" height="774" alt="image" src="https://github.com/user-attachments/assets/14fcbcb0-96c0-40f7-b20c-ebf5b12b53b5" />
 
+## Routing... 7/3/26 (2-3 hour)
+It's taking a while but we're getting there. I am currently routing everything, PCB will be done by tonight.. 
+<img width="1164" height="528" alt="image" src="https://github.com/user-attachments/assets/95cae7d1-e5fe-4551-b88b-c0cf5e242411" />
+<img width="775" height="761" alt="image" src="https://github.com/user-attachments/assets/025e0868-9e07-4c6f-9ca2-81a403e31ce1" />
+
