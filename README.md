@@ -11,7 +11,7 @@ Wazza is a fully open-source, gesture-controlled AI wand that translates physica
 - 1 x 18650 LiPo Battery Cell1 x TP4056 USB-C Battery Charger Module
 - 1 x Tactile Push Button (Momentary switch)
 - 1 x WS2812B RGB LED Strip (15–20 LEDs)
-- 10 x  Resistors (For the required I2C data/clock pull-ups
+- 10 x  Resistors (For the required I2C data/clock pull-ups)
 - 3 x Electrolytic Capacitors
 
 ## Schematic
@@ -26,6 +26,9 @@ Wazza is a fully open-source, gesture-controlled AI wand that translates physica
 
 
 The schematic composes a well organized layout of each system in the device, ranging from power management to the microcontroller itself. This lays the ideal blueprint for the PCB.
+
+The power system (powered by a USB-C component, is the base component of the whole project. A user plugs in a wire in order to actually connect to the code itself, and allow the Ai to run within itself. That way the user can just prompt using the commanded gestures it follows. 
+
 
 ## PCB
 <img width="252" height="715" alt="image" src="https://github.com/user-attachments/assets/2cc7b468-cb41-48ba-ac2d-ff27166d215c" />
