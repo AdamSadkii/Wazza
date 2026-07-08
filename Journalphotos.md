@@ -41,3 +41,5 @@
 <img width="627" height="650" alt="image" src="https://github.com/user-attachments/assets/f8a85b52-95ad-4b9d-bfe3-19638b036896" />
 <img width="817" height="737" alt="image" src="https://github.com/user-attachments/assets/ab621a85-1338-4d4e-b39c-56d9245a895e" />
 
+## Hours 3-4 7/7/2026
+
