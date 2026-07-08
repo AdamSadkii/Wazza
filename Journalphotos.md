@@ -36,3 +36,7 @@
 <img width="252" height="715" alt="image" src="https://github.com/user-attachments/assets/98101731-d932-4a3a-8075-ab4e18bbcb39" />
 <img width="563" height="518" alt="image" src="https://github.com/user-attachments/assets/8eef65d9-d227-4f0e-83f3-e1ec219c3c9b" />
 <img width="292" height="597" alt="image" src="https://github.com/user-attachments/assets/f123c024-9033-455a-aec6-b96e4a599f61" />
+
+## Hours 4-5 7/7/2026
+<img width="627" height="650" alt="image" src="https://github.com/user-attachments/assets/f8a85b52-95ad-4b9d-bfe3-19638b036896" />
+
