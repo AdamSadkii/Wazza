@@ -150,7 +150,7 @@ Once these verification steps are complete, the project will move into the manuf
 
 <img width="252" height="715" alt="image" src="https://github.com/user-attachments/assets/98101731-d932-4a3a-8075-ab4e18bbcb39" />
 
-## Routing Complete! 7/7 (Hours 1-4) 
+## Routing Complete! 7/7 (Hours 1-2) 
 
 Completed routing after reassembling 3 days ago. I was able to reroute everything with the correct net labels finally :sob: 
 
@@ -161,6 +161,10 @@ Completed routing after reassembling 3 days ago. I was able to reroute everythin
 ENJOY WE MAKING HOLES NOW!!
 
 
-## Holes Complete, onto CADDING! 7/7 (4-5)
+## Holes Complete, onto CADDING! 7/7 (Hours 2-3)
 <img width="627" height="650" alt="image" src="https://github.com/user-attachments/assets/3d8c44a6-004d-40eb-b242-1cb7b3e15775" />
+
+## CADDING... 7/7 (Hour 3)
+WE are currently sketching and beginning our first steps into cadding the wand. Lets go
+<img width="817" height="737" alt="image" src="https://github.com/user-attachments/assets/ebd5abc4-5c87-44e3-8388-4652c9a93b11" />
 
