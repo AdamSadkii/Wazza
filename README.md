@@ -89,7 +89,6 @@ The project includes complete KiCAD schematic files organized by functional modu
 
 <img width="252" height="715" alt="image" src="https://github.com/user-attachments/assets/2cc7b468-cb41-48ba-ac2d-ff27166d215c" />
 <img width="563" height="518" alt="image" src="https://github.com/user-attachments/assets/8eef65d9-d227-4f0e-83f3-e1ec219c3c9b" />
-<img width="292" height="597" alt="image" src="https://github.com/user-attachments/assets/f123c024-9033-455a-aec6-b96e4a599f61" />
 <img width="1037" height="531" alt="image" src="https://github.com/user-attachments/assets/d108678b-4a3c-4225-8fda-f0c08227013a" />
 <img width="1101" height="811" alt="image" src="https://github.com/user-attachments/assets/0a3cba86-37cb-4c0e-9bea-73647cb562b8" />
 
