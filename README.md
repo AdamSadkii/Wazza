@@ -81,3 +81,8 @@ Potential improvements include on-device machine learning for gesture recognitio
 
 The project includes complete KiCAD schematic files organized by functional module, PCB layout files for fabrication, Arduino firmware source code with gesture templates, and assembly instructions with wiring diagrams. All code is open source and available for modification and redistribution.
 
+<img width="252" height="715" alt="image" src="https://github.com/user-attachments/assets/2cc7b468-cb41-48ba-ac2d-ff27166d215c" />
+<img width="563" height="518" alt="image" src="https://github.com/user-attachments/assets/8eef65d9-d227-4f0e-83f3-e1ec219c3c9b" />
+<img width="292" height="597" alt="image" src="https://github.com/user-attachments/assets/f123c024-9033-455a-aec6-b96e4a599f61" />
+
+
