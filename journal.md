@@ -166,5 +166,10 @@ ENJOY WE MAKING HOLES NOW!!
 
 ## CADDING... 7/7 (Hour 3)
 WE are currently sketching and beginning our first steps into cadding the wand. Lets go
-<img width="817" height="737" alt="image" src="https://github.com/user-attachments/assets/ebd5abc4-5c87-44e3-8388-4652c9a93b11" />
+<img width="817" height="737" alt="image" src="https://github.com/user-attachments/assets/ebd5abc4-5c87-44e3-8388-4652c9a93b11" /> 
+
+
+## EVERYTHING DONE LETS GOOOOOOOOOO OMG 7/7 (Hours 3-4)
+We finished the PCB Routing, we finished the designs, we finished the cadding. WE DID ITTTTTTTTTTTTTT (lebron quote.. or jayson tatum? idk). 
+<img width="1037" height="531" alt="image" src="https://github.com/user-attachments/assets/b6f4975f-8fce-4656-acfd-308cf840e8be" />
 
