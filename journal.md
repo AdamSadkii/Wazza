@@ -159,3 +159,8 @@ Completed routing after reassembling 3 days ago. I was able to reroute everythin
 <img width="292" height="597" alt="image" src="https://github.com/user-attachments/assets/f123c024-9033-455a-aec6-b96e4a599f61" />
 
 ENJOY WE MAKING HOLES NOW!!
+
+
+## Holes Complete, onto CADDING! 7/7 (4-5)
+<img width="627" height="650" alt="image" src="https://github.com/user-attachments/assets/3d8c44a6-004d-40eb-b242-1cb7b3e15775" />
+
