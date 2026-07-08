@@ -70,7 +70,13 @@ The wand enclosure is 3D printed from PLA or resin filament and designed to fit 
 
 ## Schematic
 
-<img width="1046" height="726" alt="image" src="https://github.com/user-attachments/assets/ed5b7652-b10a-4a1f-a075-88a767a4fef8" />
+<img width="711" height="301" alt="image" src="https://github.com/user-attachments/assets/1569244d-4e65-4fde-bfbe-05a0b9a3806f" />
+<img width="802" height="427" alt="image" src="https://github.com/user-attachments/assets/81efa213-27a1-4943-a675-421c33ea0701" />
+<img width="796" height="388" alt="image" src="https://github.com/user-attachments/assets/4ec49725-35b1-42b0-aa20-bc468c357368" />
+<img width="586" height="562" alt="image" src="https://github.com/user-attachments/assets/37beaafb-b1b7-489d-b6e5-dee7d2ad6386" />
+<img width="402" height="288" alt="image" src="https://github.com/user-attachments/assets/c82b7383-9072-4c87-ab0c-248d76ed9dbc" />
+<img width="743" height="483" alt="image" src="https://github.com/user-attachments/assets/945cc301-dc71-436d-98f5-64e68c29ae68" />
+
 
 
 ## Future Enhancements
@@ -84,5 +90,6 @@ The project includes complete KiCAD schematic files organized by functional modu
 <img width="252" height="715" alt="image" src="https://github.com/user-attachments/assets/2cc7b468-cb41-48ba-ac2d-ff27166d215c" />
 <img width="563" height="518" alt="image" src="https://github.com/user-attachments/assets/8eef65d9-d227-4f0e-83f3-e1ec219c3c9b" />
 <img width="292" height="597" alt="image" src="https://github.com/user-attachments/assets/f123c024-9033-455a-aec6-b96e4a599f61" />
-
+<img width="1037" height="531" alt="image" src="https://github.com/user-attachments/assets/d108678b-4a3c-4225-8fda-f0c08227013a" />
+<img width="1101" height="811" alt="image" src="https://github.com/user-attachments/assets/0a3cba86-37cb-4c0e-9bea-73647cb562b8" />
 
