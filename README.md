@@ -1,6 +1,6 @@
 # Wazza - Magic in The Air
 
-## Wazza is a fully open-source, gesture-controlled AI wand that translates physical hand motions into real-time digital commands. By tracking movement via an internal 6-axis IMU, the onboard STM32H7 processor evaluates gesture vectors, interfaces with cloud-based AI systems via its connectivity peripherals, and streams audio responses directly through an integrated speaker system.
+Wazza is a fully open-source, gesture-controlled AI wand that translates physical hand motions into real-time digital commands. By tracking movement via an internal 6-axis IMU, the onboard STM32H7 processor evaluates gesture vectors, interfaces with cloud-based AI systems via its connectivity peripherals, and streams audio responses directly through an integrated speaker system.
 
 ## Key Features
 
@@ -22,6 +22,8 @@
 <img width="586" height="562" alt="image" src="https://github.com/user-attachments/assets/37beaafb-b1b7-489d-b6e5-dee7d2ad6386" />
 <img width="402" height="288" alt="image" src="https://github.com/user-attachments/assets/c82b7383-9072-4c87-ab0c-248d76ed9dbc" />
 <img width="743" height="483" alt="image" src="https://github.com/user-attachments/assets/945cc301-dc71-436d-98f5-64e68c29ae68" />
+
+
 
 The schematic composes a well organized layout of each system in the device, ranging from power management to the microcontroller itself. This lays the ideal blueprint for the PCB.
 
@@ -47,7 +49,7 @@ A big thanks to Nesh, Keam, and Yahya for being part of the process the whole wa
 
 ## License: MIT
 
-Copyright <2026> <COPYRIGHT HOLDER>
+Copyright <YEAR> <COPYRIGHT HOLDER>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
