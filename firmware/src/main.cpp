@@ -1,7 +1,3 @@
-// Wazza wand firmware
-// Streams IMU telemetry + gesture events to the backend over WebSocket,
-// and accepts LED / OLED commands back.
-
 #include <Arduino.h>
 #include <Wire.h>
 #include <WiFi.h>
@@ -24,7 +20,7 @@ bool oledOk = false;
 unsigned long lastGestureMs = 0;
 unsigned long lastTelemetryMs = 0;
 
-// ---------- OLED ----------
+// OLED
 
 void oledShow(const String &line1, const String &line2 = "") {
   if (!oledOk) return;
