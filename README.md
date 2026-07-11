@@ -1,7 +1,6 @@
 # Wazza - Magic in The Air
 
-Wazza is a fully open-source, gesture-controlled AI wand that translates physical hand motions into real-time digital commands. By tracking movement via an internal 6-axis IMU, the onboard STM32H7 processor evaluates gesture vectors, interfaces with cloud-based AI systems via its connectivity peripherals, and streams audio responses directly through an integrated speaker system.
-
+Wazza is a fully open-source, gesture-controlled AI wand that translates physical hand motions into real-time digital commands. By tracking movement via an internal MPU-6050 6-axis IMU, the onboard ESP32-S3 Mini microcontroller processes gesture vectors, coordinates peripheral systems, and streams telemetry data to an onboard OLED screen alongside audio feedback through an integrated I2S speaker interface.
 ## Key Features
 
 - 1 x ESP32-S3-MINI-1 Microcontroller (Main Brain)
