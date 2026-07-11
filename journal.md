@@ -1,7 +1,7 @@
 ## Schematic Complete - Day 6/28/26 (5h58min)
 
 ### Overview
-Finally finished the schematic! Coming into this schematic, I knew I wanted to focus on one thing: the microcontroller as the main component. However, in hopes of organization, I thought otherwise and considered splitting things up.
+Finally finished the schematic. Coming into this schematic, I knew I wanted to focus on one thing: the microcontroller as the main component. However, in hopes of organization, I thought otherwise and considered splitting things up.
 
 ### Design Decisions
 
@@ -22,7 +22,7 @@ Keeping everything on a single page actually made more sense than I initially th
 
 ### Next Steps
 
-Tomorrow, I will get to the PCB and hopefully get most of it done. Although it's an impending doom, I am really excited to work on that aspect of my project! The schematic is solid, so the layout should flow naturally from here.
+Tomorrow, I will get to the PCB and hopefully get most of it done. Although it's an impending doom, I am really excited to work on that aspect of my project. The schematic is solid, so the layout should flow naturally from here.
 
 ### Reflection
 
@@ -32,7 +32,7 @@ This feels like a major milestone. The schematic is the blueprint for everything
 
 ## Organizing PCB - Day 6/29/26 (Hour 1)
 
-I am currently organizing the PCB layout by splitting each component into its own dedicated section as we figure it out. Even though figuring out the exact placement for the components is a little hard, it is totally okay!
+I am organizing the PCB. Currently splitting each component on its own but we're figuring it out. Even though the components are a little hard to figure out, it's totally okay. 
 
 <img width="773" height="580" alt="image" src="https://github.com/user-attachments/assets/0136daff-c0d4-490e-9324-004016972512" />
 
@@ -54,11 +54,11 @@ PCB Layout Started - Day 6/30/26
 
 ### Overview
 
-Today was incredibly productive yet absolutely exhausting. I took the massive leap into creating my first-ever physical PCB layout! Moving from the abstract schematic canvas to actual component footprints makes the wand feel real, though it definitely brought some brutal troubleshooting with it.
+Today was incredibly productive yet absolutely exhausting. I took the massive leap into creating my first-ever physical PCB layout. Moving from the abstract schematic canvas to actual component footprints makes the wand feel real, though it definitely brought some brutal troubleshooting with it.
 
 ### Design Decisions & Troubleshooting
 
-I hit a major roadblock early on regarding the OLED screen and the IMU pull-up resistors. During my initial layout check, I realized my wiring accidentally tied both sides of $R4$ and $R5$ directly to the +3.3V line, completely missing the actual SCL and SDA lines! Instead of moving forward with a broken bus, I paused and forced myself to rewire those schematic components properly. It took a couple of hours of careful tracing, but I finally re-run the check successfully. Once the schematic was cleared, I imported it into the PCB editor and successfully modeled the initial physical flow of the wand stretching all the way from the USB-C port to the OLED screen placement.
+I hit a major roadblock early on regarding the OLED screen and the IMU pull-up resistors. During my initial layout check, I realized my wiring accidentally tied both sides of $R4$ and $R5$ directly to the +3.3V line, completely missing the actual SCL and SDA lines. Instead of moving forward with a broken bus, I paused and forced myself to rewire those schematic components properly. It took a couple of hours of careful tracing, but I finally re-run the check successfully. Once the schematic was cleared, I imported it into the PCB editor and successfully modeled the initial physical flow of the wand stretching all the way from the USB-C port to the OLED screen placement.
 
 ### Architecture
 
@@ -73,7 +73,7 @@ Catching a massive I2C pull-up mistake now instead of after fabrication taught m
 
 ### Next Steps
 
-Tomorrow is all about fixing that ESP32 module variant, cleaning up the routing, and finalizing the board outline. There is still a bit of uncertainty about the tight layout, but the goal is to get the CAD fully submitted so we can ship the design files out for manufacturing. Job's not finished; let's get this accepted!
+Tomorrow is all about fixing that ESP32 module variant, cleaning up the routing, and finalizing the board outline. There is still a bit of uncertainty about the tight layout, but the goal is to get the CAD fully submitted so we can ship the design files out for manufacturing. Job's not finished; let's get this accepted.
 
 <img width="1071" height="853" alt="image" src="https://github.com/user-attachments/assets/6b969f1c-960b-40bd-b3f9-83a89c678b7d" />
 <img width="492" height="397" alt="image" src="https://github.com/user-attachments/assets/6811b899-7b8a-4f35-92b5-3d110f4a0ca5" />
@@ -82,7 +82,7 @@ Tomorrow is all about fixing that ESP32 module variant, cleaning up the routing,
 
 ## Schematic Rewire WE ALMOST DONE - Day 6/30/26 (Hours 1-2)
 
-I decided to rewire my schematic because I realized I was using the raw chip version of the ESP32-S3 instead of the actual module version since I chose the ESP32-S3 Mini. Both my sensor interface and power management sections are now fully completed.
+Decided to rewire my schematic as I realized I was using the Chip version of the ESP32-S3 and not the actual module version (I chose the ESP32-S3 Mini). Both my sensor interface and power management is done. 
 
 <img width="993" height="776" alt="image" src="https://github.com/user-attachments/assets/c7d27f3a-9e25-431a-a3e0-d09b8278279f" />
 <img width="1069" height="477" alt="image" src="https://github.com/user-attachments/assets/2577eb53-1cc0-46ed-8b8c-29fd74fbe153" />
@@ -91,7 +91,7 @@ I decided to rewire my schematic because I realized I was using the raw chip ver
 
 ## Schematic Rewire So close - Day 6/30/26 (Hours 3-4)
 
-I decided to go for a much neater version, so I resorted to using different page sheets to make everything simpler. This solved my rewiring issue entirely, cleared up the mess, and let me finish a successful rewire straight to the new ESP32-S3 Mini to connect everything at once.
+I decided for a neater version so I resorted to different page sheets and made it simpler. This solved my rewiring issue entirely and made it much more simpler. Additionally, I resorted to the ESP32-S3 Mini and was able to complete a successful rewire towards the microcontroller connecting everything at once. 
 
 <img width="850" height="807" alt="image" src="https://github.com/user-attachments/assets/6df10024-a6bf-439e-b84b-19ac6f012a18" />
 <img width="822" height="405" alt="image" src="https://github.com/user-attachments/assets/b78ec270-6ca7-4f70-bac3-0b2b4c59ed3d" />
@@ -101,7 +101,7 @@ I decided to go for a much neater version, so I resorted to using different page
 
 ## Schematic Rewire - Day 6/30/26 (Hours 4-5)
 
-To finally end the schematic rewire phase, I finished up my OLED and Audio Interface, which are two super important components connecting to my ESP32. The OLED will handle displaying info later when it's programmed, and the Audio Interface will do the exact same thing but in an audio format.
+To end the Schematic Rewire (finally..) I finished my OLED and Audio Interface, two important components connecting to my ESP32. The OLED will display info and will later be programmed to do so, meanwhile the Audio Interface will do the same in an audio format. 
 
 <img width="925" height="706" alt="image" src="https://github.com/user-attachments/assets/58ebe590-3e1b-46ac-b8a0-e10366c60dbe" />
 <img width="830" height="665" alt="image" src="https://github.com/user-attachments/assets/8885cc1e-0c6c-4af7-bfda-38c51fddb81e" />
@@ -133,7 +133,7 @@ Massive milestone hit today. Realized a fundamental mismatch in the central micr
 
 #### Project Status 6/30/26:
 
-The schematic is officially **100% complete** and fully modularized. Every subsystem—Power, Sensors, OLED, Audio, and LEDs—is cleanly tied back to the ESP32-S3 Mini. Ready to lock it in and move to footprints!
+The schematic is officially **100% complete** and fully modularized. Every subsystem—Power, Sensors, OLED, Audio, and LEDs—is cleanly tied back to the ESP32-S3 Mini. Ready to lock it in and move to footprints.
 
 <img width="830" height="665" alt="image" src="https://github.com/user-attachments/assets/8885cc1e-0c6c-4af7-bfda-38c51fddb81e" />
 <img width="1069" height="477" alt="image" src="https://github.com/user-attachments/assets/2577eb53-1cc0-46ed-8b8c-29fd74fbe153" />
@@ -142,7 +142,7 @@ The schematic is officially **100% complete** and fully modularized. Every subsy
 
 ## PCB Organized - Time to Reroute! 7/3/26: (1-2 Hours)
 
-The PCB is finally organized, so it's time to reroute everything and make sure the chip is well done and perfectly suited. CADDING IS HAPPENING VERY SOON!!!
+The PCB is finally organized, it's time to reroute and make sure the chip is well done and suited. CADDING IS VERY SOON.
 
 <img width="1202" height="774" alt="image" src="https://github.com/user-attachments/assets/14fcbcb0-96c0-40f7-b20c-ebf5b12b53b5" />
 
@@ -150,7 +150,7 @@ The PCB is finally organized, so it's time to reroute everything and make sure t
 
 ## Routing... 7/3/26 (2-3 hour)
 
-It's taking a while but we're getting there. I am currently routing everything, and the PCB will be completely done by tonight.
+It's taking a while but we're getting there. I am currently routing everything, PCB will be done by tonight.
 
 <img width="1164" height="528" alt="image" src="https://github.com/user-attachments/assets/95cae7d1-e5fe-4551-b88b-c0cf5e242411" />
 <img width="775" height="761" alt="image" src="https://github.com/user-attachments/assets/025e0868-9e07-4c6f-9ca2-81a403e31ce1" />
@@ -171,19 +171,19 @@ Once these verification steps are complete, the project will move into the manuf
 
 ## Routing Complete! 7/7 (Hours 1-2) 
 
-Completed routing after reassembling everything 3 days ago. I was able to reroute everything with the correct net labels finally. 
+Completed routing after reassembling 3 days ago. I was able to reroute everything with the correct net labels finally.
 
 <img width="252" height="715" alt="image" src="https://github.com/user-attachments/assets/98101731-d932-4a3a-8075-ab4e18bbcb39" />
 <img width="563" height="518" alt="image" src="https://github.com/user-attachments/assets/8eef65d9-d227-4f0e-83f3-e1ec219c3c9b" />
 <img width="292" height="597" alt="image" src="https://github.com/user-attachments/assets/f123c024-9033-455a-aec6-b96e4a599f61" />
 
-ENJOY WE MAKING HOLES NOW!!
+ENJOY WE MAKING HOLES NOW.
 
 ---
 
 ## Holes Complete, onto CADDING! 7/7 (Hours 2-3)
 
-The board holes are fully done, which means we are officially moving onto cadding the layout.
+Holes are officially done, time to move straight onto CADDING.
 
 <img width="627" height="650" alt="image" src="https://github.com/user-attachments/assets/3d8c44a6-004d-40eb-b242-1cb7b3e15775" />
 
@@ -191,7 +191,7 @@ The board holes are fully done, which means we are officially moving onto caddin
 
 ## CADDING... 7/7 (Hour 3)
 
-We are currently sketching and beginning our first steps into cadding the wand casing. Let's go!
+WE are currently sketching and beginning our first steps into cadding the wand. Lets go.
 
 <img width="817" height="737" alt="image" src="https://github.com/user-attachments/assets/ebd5abc4-5c87-44e3-8388-4652c9a93b11" /> 
 
@@ -199,32 +199,34 @@ We are currently sketching and beginning our first steps into cadding the wand c
 
 ## EVERYTHING DONE LETS GOOOOOOOOOO OMG 7/7 (Hours 3-4)
 
-We finished the PCB Routing, we finished the designs, and we finished the cadding. WE DID IT! (Insert Lebron quote... or Jayson Tatum? Idk but we are completely done!)
+We finished the PCB Routing, we finished the designs, we finished the cadding. WE DID IT (lebron quote.. or jayson tatum? idk but we are completely done). 
 
 <img width="1037" height="531" alt="image" src="https://github.com/user-attachments/assets/b6f4975f-8fce-4656-acfd-308cf840e8be" />
 
 ---
 
-## Final Devlog – July 7, 2026
+## Day 7/7/26 (Hours 3-4)
 
-**Focus:** Complete Routing Validation, Physical Mounting Holes, & Full CAD Assembly
+### Devlog – July 7, 2026
 
-Massive milestone hit today. Everything is officially wrapped up from the board traces to the 3D model enclosures. The full pipeline is complete, moving the wand from abstract connections to a fully defined physical prototype.
+**Focus:** Final Routing Validation, Board Mounting Holes, & Structural CAD Completion
+
+Massive milestone hit today. Everything is officially wrapped up from the physical board connections to the outer wand enclosure design. The full system is fully modeled and ready for production file generation.
 
 #### Accomplishments:
 
-* **PCB Routing Complete:**
-  * Cleaned up and verified 100% of the trace paths across the board, utilizing the correct net labels to establish solid connections with the ESP32-S3 Mini.
-  * Verified that no nets remain unrouted and the overall connection matrix is fully satisfied with zero errors.
+* **PCB Routing Validation:**
+  * Cleaned up and verified 100% of the trace connections across the board layout, matching everything perfectly with the new net labels on the ESP32-S3 Mini.
+  * Completed the full connection matrix with zero remaining unrouted nets or trace bottlenecks.
 
-* **Drill Holes & Board Outline:**
-  * Completed the physical mounting hole placements directly on the layout design.
-  * Ensured the clearances are perfectly aligned so the board can be securely fastened inside the final wand casing without shorting any active copper paths.
+* **Physical Mounting Holes:**
+  * Added the structural mounting drill holes directly onto the finalized PCB outline.
+  * Verified all hardware component clearances around the holes to ensure secure physical assembly inside the wand body without risking any trace shorts.
 
-* **CAD Modeling Integration:**
-  * Transitioned straight into CAD modeling to map out the physical enclosure of the wand.
-  * Successfully finished sketching, layout mapping, and final assembly configurations to match the exact dimensions of the completed PCB footprint.
+* **3D CAD Assembly:**
+  * Transitioned straight from the completed board layout into sketching and cadding the final physical wand body.
+  * Successfully matched all component layout configurations, display cutouts, and physical boundary constraints to complete the initial enclosure assembly sketch.
 
 #### Project Status 7/7/26:
 
-The hardware development phase is officially **100% complete**. Schematic re-wiring, final PCB track routing, component placements, mounting layouts, and structural CAD modeling are all fully locked in. Ready to export production files and manufacture the design!
+The physical layout and hardware configuration phase is **100% complete**. The schematic wiring sheets, PCB routing networks, structural mounting layouts, and external CAD design frames are all fully locked in. Ready to export manufacturing assets and ship it.
