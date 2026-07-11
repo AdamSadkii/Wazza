@@ -1,11 +1,4 @@
-"""Wazza backend.
-
-- WebSocket server on :8765 — the wand and dashboards both connect here.
-- Static HTTP server on :8000 — serves the frontend dashboard.
-
-The wand identifies itself with {"type": "hello", "value": "wazza-wand"}.
-Everything else that connects is treated as a dashboard.
-"""
+# Wazza backend
 
 import asyncio
 import http.server
@@ -20,10 +13,10 @@ WS_PORT = 8765
 HTTP_PORT = 8000
 FRONTEND_DIR = Path(__file__).resolve().parent.parent / "frontend"
 
-wand = None          # the wand's websocket connection, if online
-dashboards = set()   # browser connections
+wand = None
+dashboards = set()
 
-# Gesture -> spell mapping. Each spell is a command sent back to the wand.
+# Spells
 SPELLS = {
     "flick": {"name": "Sparks", "cmd": {"cmd": "flash", "r": 255, "g": 180, "b": 0, "times": 3}},
     "swipe_left": {"name": "Frost", "cmd": {"cmd": "led", "r": 0, "g": 120, "b": 255}},
@@ -49,7 +42,6 @@ async def send_to_wand(command: dict):
 
 
 async def handle_wand_message(msg: dict):
-    """React to gestures/buttons and relay everything to dashboards."""
     if msg.get("type") == "gesture":
         spell = SPELLS.get(msg.get("value"))
         if spell:
@@ -61,6 +53,7 @@ async def handle_wand_message(msg: dict):
     await broadcast_dashboards(msg)
 
 
+# WebSocket
 async def handler(ws):
     global wand
     role = "dashboard"
@@ -83,7 +76,6 @@ async def handler(ws):
             if role == "wand":
                 await handle_wand_message(msg)
             else:
-                # Dashboard sends raw wand commands, e.g. {"cmd": "led", ...}
                 if "cmd" in msg:
                     await send_to_wand(msg)
     finally:
@@ -94,6 +86,7 @@ async def handler(ws):
             print("Wand disconnected")
 
 
+# HTTP
 def serve_frontend():
     handler_cls = partial(
         http.server.SimpleHTTPRequestHandler, directory=str(FRONTEND_DIR)

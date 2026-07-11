@@ -1,6 +1,4 @@
 // Wazza wand firmware
-// Streams IMU telemetry + gesture events to the backend over WebSocket,
-// and accepts LED / OLED commands back.
 
 #include <Arduino.h>
 #include <Wire.h>
@@ -24,8 +22,7 @@ bool oledOk = false;
 unsigned long lastGestureMs = 0;
 unsigned long lastTelemetryMs = 0;
 
-// ---------- OLED ----------
-
+// OLED
 void oledShow(const String &line1, const String &line2 = "") {
   if (!oledOk) return;
   oled.clearDisplay();
@@ -40,8 +37,7 @@ void oledShow(const String &line1, const String &line2 = "") {
   oled.display();
 }
 
-// ---------- LEDs ----------
-
+// LEDs
 void ledsFill(uint8_t r, uint8_t g, uint8_t b) {
   fill_solid(leds, NUM_LEDS, CRGB(r, g, b));
   FastLED.show();
@@ -57,8 +53,7 @@ void ledsFlash(const CRGB &color, int times = 2, int onMs = 120) {
   }
 }
 
-// ---------- WebSocket ----------
-
+// WebSocket
 void sendJson(JsonDocument &doc) {
   String out;
   serializeJson(doc, out);
@@ -107,10 +102,7 @@ void onWsEvent(WStype_t type, uint8_t *payload, size_t length) {
   }
 }
 
-// ---------- Gestures ----------
-
-// Very simple thresholding for v1: flick = linear acceleration spike,
-// swipe left/right = strong yaw rotation, with a cooldown between reports.
+// Gestures
 void detectGesture(const sensors_event_t &accel, const sensors_event_t &gyro) {
   unsigned long now = millis();
   if (now - lastGestureMs < GESTURE_COOLDOWN_MS) return;
@@ -136,6 +128,7 @@ void detectGesture(const sensors_event_t &accel, const sensors_event_t &gyro) {
   }
 }
 
+// Telemetry
 void sendTelemetry(const sensors_event_t &accel, const sensors_event_t &gyro) {
   JsonDocument doc;
   doc["type"] = "imu";
@@ -149,8 +142,7 @@ void sendTelemetry(const sensors_event_t &accel, const sensors_event_t &gyro) {
   sendJson(doc);
 }
 
-// ---------- Buttons ----------
-
+// Buttons
 void pollButtons() {
   static bool lastAction = HIGH, lastBoot = HIGH;
   bool action = digitalRead(PIN_BTN_ACTION);
@@ -163,8 +155,7 @@ void pollButtons() {
   lastBoot = boot;
 }
 
-// ---------- Setup / loop ----------
-
+// Setup
 void setup() {
   Serial.begin(115200);
   pinMode(PIN_BTN_ACTION, INPUT_PULLUP);
@@ -172,7 +163,7 @@ void setup() {
 
   FastLED.addLeds<WS2812B, PIN_WS2812_DIN, GRB>(leds, NUM_LEDS);
   FastLED.setBrightness(80);
-  ledsFill(0, 0, 30);  // dim blue = booting
+  ledsFill(0, 0, 30);
 
   Wire.begin(PIN_I2C_SDA, PIN_I2C_SCL);
 
@@ -201,9 +192,10 @@ void setup() {
   ws.onEvent(onWsEvent);
   ws.setReconnectInterval(2000);
 
-  ledsFill(0, 30, 0);  // dim green = ready
+  ledsFill(0, 30, 0);
 }
 
+// Loop
 void loop() {
   ws.loop();
   pollButtons();
