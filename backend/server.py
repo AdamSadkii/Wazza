@@ -1,0 +1,117 @@
+"""Wazza backend.
+
+- WebSocket server on :8765 — the wand and dashboards both connect here.
+- Static HTTP server on :8000 — serves the frontend dashboard.
+
+The wand identifies itself with {"type": "hello", "value": "wazza-wand"}.
+Everything else that connects is treated as a dashboard.
+"""
+
+import asyncio
+import http.server
+import json
+import threading
+from functools import partial
+from pathlib import Path
+
+import websockets
+
+WS_PORT = 8765
+HTTP_PORT = 8000
+FRONTEND_DIR = Path(__file__).resolve().parent.parent / "frontend"
+
+wand = None          # the wand's websocket connection, if online
+dashboards = set()   # browser connections
+
+# Gesture -> spell mapping. Each spell is a command sent back to the wand.
+SPELLS = {
+    "flick": {"name": "Sparks", "cmd": {"cmd": "flash", "r": 255, "g": 180, "b": 0, "times": 3}},
+    "swipe_left": {"name": "Frost", "cmd": {"cmd": "led", "r": 0, "g": 120, "b": 255}},
+    "swipe_right": {"name": "Ember", "cmd": {"cmd": "led", "r": 255, "g": 40, "b": 0}},
+}
+
+
+async def broadcast_dashboards(message: dict):
+    if not dashboards:
+        return
+    data = json.dumps(message)
+    await asyncio.gather(
+        *(ws.send(data) for ws in dashboards), return_exceptions=True
+    )
+
+
+async def send_to_wand(command: dict):
+    if wand is not None:
+        try:
+            await wand.send(json.dumps(command))
+        except websockets.ConnectionClosed:
+            pass
+
+
+async def handle_wand_message(msg: dict):
+    """React to gestures/buttons and relay everything to dashboards."""
+    if msg.get("type") == "gesture":
+        spell = SPELLS.get(msg.get("value"))
+        if spell:
+            await send_to_wand(spell["cmd"])
+            await send_to_wand(
+                {"cmd": "oled", "line1": "Spell cast:", "line2": spell["name"]}
+            )
+            msg["spell"] = spell["name"]
+    await broadcast_dashboards(msg)
+
+
+async def handler(ws):
+    global wand
+    role = "dashboard"
+    dashboards.add(ws)
+    try:
+        async for raw in ws:
+            try:
+                msg = json.loads(raw)
+            except json.JSONDecodeError:
+                continue
+
+            if msg.get("type") == "hello" and msg.get("value") == "wazza-wand":
+                role = "wand"
+                wand = ws
+                dashboards.discard(ws)
+                await broadcast_dashboards({"type": "status", "wand": "online"})
+                print("Wand connected")
+                continue
+
+            if role == "wand":
+                await handle_wand_message(msg)
+            else:
+                # Dashboard sends raw wand commands, e.g. {"cmd": "led", ...}
+                if "cmd" in msg:
+                    await send_to_wand(msg)
+    finally:
+        dashboards.discard(ws)
+        if ws is wand:
+            wand = None
+            await broadcast_dashboards({"type": "status", "wand": "offline"})
+            print("Wand disconnected")
+
+
+def serve_frontend():
+    handler_cls = partial(
+        http.server.SimpleHTTPRequestHandler, directory=str(FRONTEND_DIR)
+    )
+    httpd = http.server.ThreadingHTTPServer(("0.0.0.0", HTTP_PORT), handler_cls)
+    print(f"Dashboard:  http://localhost:{HTTP_PORT}")
+    httpd.serve_forever()
+
+
+async def main():
+    threading.Thread(target=serve_frontend, daemon=True).start()
+    async with websockets.serve(handler, "0.0.0.0", WS_PORT):
+        print(f"WebSocket:  ws://0.0.0.0:{WS_PORT}")
+        await asyncio.Future()
+
+
+if __name__ == "__main__":
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        print("\nBye")
