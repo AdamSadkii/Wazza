@@ -9,6 +9,8 @@ from pathlib import Path
 
 import websockets
 
+from ai import ask_ai
+
 WS_PORT = 8765
 HTTP_PORT = 8000
 FRONTEND_DIR = Path(__file__).resolve().parent.parent / "frontend"
@@ -22,6 +24,19 @@ SPELLS = {
     "swipe_left": {"name": "Frost", "cmd": {"cmd": "led", "r": 0, "g": 120, "b": 255}},
     "swipe_right": {"name": "Ember", "cmd": {"cmd": "led", "r": 255, "g": 40, "b": 0}},
 }
+
+
+def oled_lines(text: str):
+    words = text.split()
+    line1, line2 = "", ""
+    for w in words:
+        if len(line1) + len(w) < 21:
+            line1 = f"{line1} {w}".strip()
+        elif len(line2) + len(w) < 21:
+            line2 = f"{line2} {w}".strip()
+        else:
+            break
+    return line1, line2
 
 
 async def broadcast_dashboards(message: dict):
@@ -41,15 +56,22 @@ async def send_to_wand(command: dict):
             pass
 
 
+async def ai_respond(prompt: str, source: str):
+    reply = await ask_ai(prompt)
+    line1, line2 = oled_lines(reply)
+    await send_to_wand({"cmd": "oled", "line1": line1, "line2": line2})
+    await broadcast_dashboards({"type": "ai", "prompt": prompt, "reply": reply, "source": source})
+
+
 async def handle_wand_message(msg: dict):
     if msg.get("type") == "gesture":
         spell = SPELLS.get(msg.get("value"))
         if spell:
             await send_to_wand(spell["cmd"])
-            await send_to_wand(
-                {"cmd": "oled", "line1": "Spell cast:", "line2": spell["name"]}
-            )
             msg["spell"] = spell["name"]
+            asyncio.create_task(
+                ai_respond(f"The wizard cast {spell['name']} with a {msg['value']} gesture.", "gesture")
+            )
     await broadcast_dashboards(msg)
 
 
@@ -75,9 +97,10 @@ async def handler(ws):
 
             if role == "wand":
                 await handle_wand_message(msg)
-            else:
-                if "cmd" in msg:
-                    await send_to_wand(msg)
+            elif msg.get("type") == "prompt" and msg.get("text"):
+                asyncio.create_task(ai_respond(msg["text"], "dashboard"))
+            elif "cmd" in msg:
+                await send_to_wand(msg)
     finally:
         dashboards.discard(ws)
         if ws is wand:

@@ -106,6 +106,15 @@
       </div>
     </div>
 
+    <div class="card">
+      <h2>Ask the Wand</h2>
+      <div style="display:flex; gap:8px;">
+        <input id="promptText" placeholder="Speak to Wazza…" onkeydown="if(event.key==='Enter')sendPrompt()" style="flex:1;background:#241e4a;border:1px solid var(--border);color:var(--text);border-radius:8px;padding:9px;font-size:0.9rem;">
+        <button onclick="sendPrompt()">Ask</button>
+      </div>
+      <p id="aiReply" style="margin-top:12px;color:var(--muted);font-size:0.9rem;font-style:italic;">The wand awaits…</p>
+    </div>
+
     <div class="card" style="grid-column: 1 / -1;">
       <h2>Event Log</h2>
       <div id="log"></div>
@@ -140,6 +149,10 @@ function handle(msg) {
     log(`gesture: ${msg.value}${msg.spell ? ' → ' + msg.spell : ''}`, 'gesture');
   } else if (msg.type === 'button') {
     log(`button: ${msg.value}`, 'button');
+  } else if (msg.type === 'ai') {
+    document.getElementById('aiReply').textContent = msg.reply;
+    setText('lastSpell', msg.source === 'gesture' ? document.getElementById('lastSpell').textContent : '—');
+    log(`wazza: ${msg.reply}`, 'gesture');
   } else if (msg.type === 'status') {
     const online = msg.wand === 'online';
     document.getElementById('wandDot').classList.toggle('online', online);
@@ -160,6 +173,15 @@ function sendColor() {
     g: parseInt(hex.slice(3, 5), 16),
     b: parseInt(hex.slice(5, 7), 16),
   });
+}
+
+function sendPrompt() {
+  const text = document.getElementById('promptText').value.trim();
+  if (text) {
+    send({ type: 'prompt', text });
+    document.getElementById('aiReply').textContent = '…';
+    document.getElementById('promptText').value = '';
+  }
 }
 
 function sendOled() {
