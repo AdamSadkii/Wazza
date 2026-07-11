@@ -1,6 +1,6 @@
-# Wazza — Bill of Materials
+# Wazza BOM
 
-All parts as placed on the Wazza PCB (KiCad refs included).
+All parts as placed on the KiCad PCB and Schematic.
 
 ## Main Components
 
