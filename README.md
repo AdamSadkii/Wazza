@@ -31,8 +31,9 @@ The power system (powered by a USB-C component, is the base component of the who
 
 
 ## PCB
-<img width="252" height="715" alt="image" src="https://github.com/user-attachments/assets/2cc7b468-cb41-48ba-ac2d-ff27166d215c" />
-<img width="563" height="518" alt="image" src="https://github.com/user-attachments/assets/8eef65d9-d227-4f0e-83f3-e1ec219c3c9b" />
+<img width="206" height="572" alt="image" src="https://github.com/user-attachments/assets/113b6360-1a48-456d-85c0-1affa5b1b53c" />
+<img width="371" height="619" alt="image" src="https://github.com/user-attachments/assets/14644987-bfa5-4635-be3b-6f72694d8c23" />
+
 
 ## Future Enhancements
 
