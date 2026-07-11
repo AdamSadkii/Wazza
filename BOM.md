@@ -35,6 +35,6 @@ All parts as placed on the Wazza PCB (KiCad refs included).
 
 ## Notes
 
-- MK2 and MK3 are the same microphone footprint in two positions — populate **one only**.
+- MK2 and MK3 are the same microphone footprint in two positions, populate one only.
 - Resistor and capacitor values are in the KiCad schematic; buy a 0805 assortment kit if unsure.
-- The bare WS2812B (D1) is on-board; J2 is the header for the external strip in the wand shaft.
+- The bare WS2812B is on-board; J2 is the header for the external strip in the wand shaft.
