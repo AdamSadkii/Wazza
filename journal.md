@@ -241,5 +241,4 @@ The physical layout and hardware configuration phase is **100% complete**. The s
 
 ### Note on Lapsed Days
 
-Days 6/29/26 and 6/30/26 were lapsed for a combined 6hr 17min. These entries are logged above as they were originally recorded, but the time tracked during that window does not reflect actively supervised work and should be accounted for separately when totaling project hours.
-```
+Days 6/29/26 and 6/30/26 were lapsed for a combined 6hr 17min. These entries are logged above as they were originally recorded. These hours were tracked on my other user --> (teaangoat@gmail.com) the rest of the Hackatime hours are tracked on (teaanhackclub@gmail.com) combining together to make up the total 20 hrs expected by the July 31st deadline.
