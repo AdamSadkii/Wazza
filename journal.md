@@ -1,3 +1,4 @@
+
 ## Schematic Complete - Day 6/28/26 (5h58min)
 
 ### Overview
@@ -30,7 +31,7 @@ This feels like a major milestone. The schematic is the blueprint for everything
 
 ---
 
-## Organizing PCB - Day 6/29/26 (Hour 1)
+## Organizing PCB - Day 6/29/26 (Hour 1) **[LAPSED DAY]**
 
 I am organizing the PCB. Currently splitting each component on its own but we're figuring it out. Even though the components are a little hard to figure out, it's totally okay. 
 
@@ -38,7 +39,7 @@ I am organizing the PCB. Currently splitting each component on its own but we're
 
 ---
 
-## Schematic Fix - Day 6/29/26 (Hours 2-3)
+## Schematic Fix - Day 6/29/26 (Hours 2-3) **[LAPSED DAY]**
 
 I discovered a major error on the PCB layout where resistors R4 and R5 were both connected directly to the 3.3V line, which would have broken the communication loop. After two hours of troubleshooting, I corrected the wiring paths and utilized several pins that were previously ignored. This process exposed a widespread series of errors throughout the schematic, requiring another two hours of focused adjustments. While the rework was incredibly tedious, tracking down and correcting those design flaws was deeply rewarding.
 
@@ -48,9 +49,9 @@ I discovered a major error on the PCB layout where resistors R4 and R5 were both
 
 ---
 
-## Journal Day 6/29/26 - PCB Almost Done? (Hours: 3)
+## Journal Day 6/29/26 - PCB Almost Done? (Hours: 3) **[LAPSED DAY]**
 
-PCB Layout Started - Day 6/30/26
+PCB Layout Started - Day 6/30/26 **[LAPSED DAY]**
 
 ### Overview
 
@@ -80,7 +81,7 @@ Tomorrow is all about fixing that ESP32 module variant, cleaning up the routing,
 
 ---
 
-## Schematic Rewire WE ALMOST DONE - Day 6/30/26 (Hours 1-2)
+## Schematic Rewire WE ALMOST DONE - Day 6/30/26 (Hours 1-2) **[LAPSED DAY]**
 
 Decided to rewire my schematic as I realized I was using the Chip version of the ESP32-S3 and not the actual module version (I chose the ESP32-S3 Mini). Both my sensor interface and power management is done. 
 
@@ -89,7 +90,7 @@ Decided to rewire my schematic as I realized I was using the Chip version of the
 
 ---
 
-## Schematic Rewire So close - Day 6/30/26 (Hours 3-4)
+## Schematic Rewire So close - Day 6/30/26 (Hours 3-4) **[LAPSED DAY]**
 
 I decided for a neater version so I resorted to different page sheets and made it simpler. This solved my rewiring issue entirely and made it much more simpler. Additionally, I resorted to the ESP32-S3 Mini and was able to complete a successful rewire towards the microcontroller connecting everything at once. 
 
@@ -99,7 +100,7 @@ I decided for a neater version so I resorted to different page sheets and made i
 
 ---
 
-## Schematic Rewire - Day 6/30/26 (Hours 4-5)
+## Schematic Rewire - Day 6/30/26 (Hours 4-5) **[LAPSED DAY]**
 
 To end the Schematic Rewire (finally..) I finished my OLED and Audio Interface, two important components connecting to my ESP32. The OLED will display info and will later be programmed to do so, meanwhile the Audio Interface will do the same in an audio format. 
 
@@ -108,7 +109,7 @@ To end the Schematic Rewire (finally..) I finished my OLED and Audio Interface, 
 
 ---
 
-## Day 6/30/26 (4hrs 48 min)
+## Day 6/30/26 (4hrs 48 min) **[LAPSED DAY]**
 
 ### Devlog – June 30, 2026
 
@@ -133,7 +134,7 @@ Massive milestone hit today. Realized a fundamental mismatch in the central micr
 
 #### Project Status 6/30/26:
 
-The schematic is officially **100% complete** and fully modularized. Every subsystem—Power, Sensors, OLED, Audio, and LEDs—is cleanly tied back to the ESP32-S3 Mini. Ready to lock it in and move to footprints.
+The schematic is officially **100% complete** and fully modularized. Every subsystem, Power, Sensors, OLED, Audio, and LEDs, is cleanly tied back to the ESP32-S3 Mini. Ready to lock it in and move to footprints.
 
 <img width="830" height="665" alt="image" src="https://github.com/user-attachments/assets/8885cc1e-0c6c-4af7-bfda-38c51fddb81e" />
 <img width="1069" height="477" alt="image" src="https://github.com/user-attachments/assets/2577eb53-1cc0-46ed-8b8c-29fd74fbe153" />
@@ -227,12 +228,19 @@ Massive milestone hit today. Everything is officially wrapped up from the physic
   * Transitioned straight from the completed board layout into sketching and cadding the final physical wand body.
   * Successfully matched all component layout configurations, display cutouts, and physical boundary constraints to complete the initial enclosure assembly sketch.
 
+## Day 7/31/26 (Hours 16-17) (LAPSED ON TEAANHACKCLUB@gmail.com USER)
 
-  ## Day 7/31/26 (Hours 16-17) (LAPSED ON TEAANHACKCLUB@gmail.com USER)
-  Currently lapsing my email, Currently working on the server.py to handle all of the Wand's messages to the user.
-  <img width="978" height="847" alt="image" src="https://github.com/user-attachments/assets/cd87ca2d-24e6-4e67-9681-a5daef0aed49" />
+Currently lapsing my email, Currently working on the server.py to handle all of the Wand's messages to the user.
 
+<img width="978" height="847" alt="image" src="https://github.com/user-attachments/assets/cd87ca2d-24e6-4e67-9681-a5daef0aed49" />
 
 #### Project Status 7/31/26:
 
 The physical layout and hardware configuration phase is **100% complete**. The schematic wiring sheets, PCB routing networks, structural mounting layouts, and external CAD design frames are all fully locked in. Ready to export manufacturing assets and ship it.
+
+---
+
+### Note on Lapsed Days
+
+Days 6/29/26 and 6/30/26 were lapsed for a combined 6hr 17min. These entries are logged above as they were originally recorded, but the time tracked during that window does not reflect actively supervised work and should be accounted for separately when totaling project hours.
+```
