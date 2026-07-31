@@ -1,4 +1,3 @@
-
 ## Schematic Complete - Day 6/28/26 (5h58min)
 
 ### Overview
