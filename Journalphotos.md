@@ -44,3 +44,7 @@
 ## Hours 3-4 7/7/2026
 <img width="1056" height="498" alt="image" src="https://github.com/user-attachments/assets/71f78fd4-72c9-429e-8b37-0f3fc4d0d407" />
 
+## Hours 16-17 7/31/2026
+<img width="978" height="847" alt="image" src="https://github.com/user-attachments/assets/f83d32de-d06a-45af-8f29-815433c6b097" />
+
+
