@@ -1,0 +1,164 @@
+// Wazza dashboard styles
+
+:root {
+    --bg: #0d0b1e;
+    --card: #17142e;
+    --border: #2c2750;
+    --text: #e8e6f7;
+    --muted: #8b86b3;
+    --accent: #a78bfa;
+    --green: #4ade80;
+    --red: #f87171;
+    --gold: #fbbf24;
+}
+
+*{ box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background: radial-gradient(elipse at top, #1a1440 0%, var(--bg) 60%);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 24px;
+}
+
+h1 { font-size: 1.6rem; margin-bottom: 4px; }
+hi span P color: var(--accent); }
+.sub ( color: var(--muted); margin-bottom: 24px; font-size: 0.9rem; )
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    max: width 1200px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.card h2 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: var(--accent);
+}
+
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background: var(--red);
+}
+
+.status-dot.online {
+    background: var(--green);
+}
+
+.imu-row, .meta-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0;
+    font-size: 0.9rem;
+}
+
+.val { 
+    font-family: Consolas, monospace;
+}
+
+.label {
+    color: var(--muted);
+}
+
+button, select {
+    background: #241e4a;
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 8px;
+    padding:10px 14px;
+    margin: 4px 6px 4px 0;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background: #322a63
+}
+
+input{type="color"} {
+    width: 44px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+input{type="text"} {
+    background: #241e4a;
+    fontborder: 1px solid var(--border);
+    color: var(--text);
+    border-radius:8px;
+    padding:9px;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+#log, #chat {
+    font-family: Consolas, monospace;
+    font-size: 0.8rem;
+    max-height: 260px;
+    overflow-y: auto;
+    line-height: 1.6;
+}
+
+#chat {
+    max-height: 320px; 
+}
+
+#chat.me {
+    color: var(--gold);
+}
+
+#chat .bot {
+    color: var(--accent);
+}
+
+#log .gesture {
+    color: var(-accent);
+}
+
+#log .button {
+    color: var(--green);
+}
+
+.time {
+    color: var(--muted);
+    margin-right: 8px;
+}
+
+.spell-grid {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.pill {
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    background: #1d1838;
+    cursor:pointer;
+}
+
+.pill:hover {
+    border-color: var(--accent);
+}
+
+.wide { 
+    grid-column: 1/ -1;
+}

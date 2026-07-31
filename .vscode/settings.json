@@ -1,0 +1,27 @@
+{
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pio": true,
+    "**/.venv": true,
+    "**/venv": true
+  },
+  "python.defaultInterpreterPath": "${workspaceFolder}/backend/.venv/Scripts/python.exe",
+  "python.analysis.extraPaths": ["${workspaceFolder}/backend"],
+  "[python]": {
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.formatOnSave": true
+  },
+  "files.associations": {
+    "**/firmware/src/*.h": "cpp",
+    "**/firmware/src/*.cpp": "cpp",
+    "**/firmware/platformio.ini": "ini"
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "platformio.ini": ".pio*",
+    "requirements.txt": ".venv",
+    "secrets.example.h": "secrets.h"
+  }
+}

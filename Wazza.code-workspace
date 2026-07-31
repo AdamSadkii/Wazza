@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "name": "Wazza",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/.pio": true,
+      "**/.venv": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "platformio.platformio-ide"
+    ]
+  }
+}
