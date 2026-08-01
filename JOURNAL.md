@@ -1,3 +1,5 @@
+# JOURNAL
+
 ## Schematic Complete - Day 6/28/26 (5h58min)
 
 ### Overview
@@ -110,7 +112,7 @@ To end the Schematic Rewire (finally..) I finished my OLED and Audio Interface, 
 
 ## Day 6/30/26 (4hrs 48 min) **[LAPSED DAY]**
 
-### Devlog – June 30, 2026
+### Devlog â€“ June 30, 2026
 
 **Focus:** Complete Schematic Overhaul, Hierarchical Sheets, & Peripheral Integration
 
@@ -118,16 +120,16 @@ Massive milestone hit today. Realized a fundamental mismatch in the central micr
 
 #### Accomplishments:
 
-* **Microcontroller Core Correction (Hours 1–2):**
+* **Microcontroller Core Correction (Hours 1â€“2):**
   * Identified a critical error: the schematic originally used the raw ESP32-S3 IC (chip-down) instead of the actual integrated module (**ESP32-S3-MINI-1**).
   * Swapped out the component block, completely saving the project from massive PCB routing headaches later, as the mini module integrates the flash, RAM, and antenna circuitry automatically.
   * Verified that the completed Sensor Interface and Power Management blocks survived the migration.
 
-* **Hierarchical Page Sheet Migration (Hours 3–4):**
+* **Hierarchical Page Sheet Migration (Hours 3â€“4):**
   * To solve the escalating "spaghetti wire" mess, abandoned the single-page layout and refactored the entire project into individual hierarchical page sheets.
   * This modular approach completely cleared up the wiring bottlenecks and allowed for a seamless, successful master rewire back to the new ESP32-S3 Mini block using clean global labels.
 
-* **OLED & Audio Interface Integration (Hours 4–5):**
+* **OLED & Audio Interface Integration (Hours 4â€“5):**
   * Finalized the schematic wiring for the dual feedback systems: the visual **OLED Display** block and the **I2S Audio Interface** block.
   * Mapped out the display paths to handle future telemetry data readouts and stabilized the I2S audio channels (microphone input and amplifier output) to provide clean audio feedback down the line.
 
@@ -207,7 +209,7 @@ We finished the PCB Routing, we finished the designs, we finished the cadding. W
 
 ## Day 7/7/26 (Hours 3-4)
 
-### Devlog – July 7, 2026
+### Devlog â€“ July 7, 2026
 
 **Focus:** Final Routing Validation, Board Mounting Holes, & Structural CAD Completion
 

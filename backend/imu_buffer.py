@@ -8,9 +8,10 @@ from collections import deque
 from dataclasses import dataclass
 from typing import Any, Deque
 
+
 @dataclass
-class ImuPoint;
-    ax:: float
+class ImuPoint:
+    ax: float
     ay: float
     az: float
     gx: float
@@ -18,9 +19,10 @@ class ImuPoint;
     gz: float
     ts: float
 
+
 class ImuBuffer:
-    def __init__(self, maxLen: int = 200) -> None:
-        self.points: Deque[ImuPoint] = deque(maxLen=maxlen)
+    def __init__(self, maxlen: int = 200) -> None:
+        self.points: Deque[ImuPoint] = deque(maxlen=maxlen)
 
     def add(self, msg: dict[str, Any]) -> ImuPoint:
         p = ImuPoint(
@@ -30,21 +32,21 @@ class ImuBuffer:
             gx=float(msg.get("gx", 0)),
             gy=float(msg.get("gy", 0)),
             gz=float(msg.get("gz", 0)),
-            ts=time.time()
+            ts=time.time(),
         )
         self.points.append(p)
         return p
-    
+
     def accel_mag(self, p: ImuPoint | None = None) -> float:
-        p=p or (self.points[-1] if self.points else None)
+        p = p or (self.points[-1] if self.points else None)
         if not p:
             return 0.0
-        return math.sqrt(p.ax * p.ax +p.ay * p.ay +p.az *p.az)
+        return math.sqrt(p.ax * p.ax + p.ay * p.ay + p.az * p.az)
 
     def stats(self) -> dict[str, float]:
         if not self.points:
-            return {"accel_mag": 0.0}
-        mags= [self.accel_mag(p) for p in self.points]
+            return {"count": 0}
+        mags = [self.accel_mag(p) for p in self.points]
         return {
             "count": float(len(mags)),
             "mag_avg": sum(mags) / len(mags),

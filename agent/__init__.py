@@ -1,4 +1,4 @@
-// Wazza's Spirit Brain -- AI AGENT PACKAGE
+"""Wazza AI agent package — wand spirit brain."""
 
 from .core import WazzaAgent, get_agent
 from .spellbook import SPELLBOOK, spell_by_gesture, spell_by_name
