@@ -53,12 +53,16 @@ Optional AI:
 
 ## Schematic
 
-<img width="711" height="301" alt="image" src="https://github.com/user-attachments/assets/1569244d-4e65-4fde-bfbe-05a0b9a3806f" />
-<img width="802" height="427" alt="image" src="https://github.com/user-attachments/assets/81efa213-27a1-4943-a675-421c33ea0701" />
-<img width="796" height="388" alt="image" src="https://github.com/user-attachments/assets/ba185da1-e040-45e8-b859-ee668cf3fa19" />
-<img width="586" height="562" alt="image" src="https://github.com/user-attachments/assets/6b969f1c-960b-40bd-b3f9-83a89c678b7d" />
-<img width="402" height="288" alt="image" src="https://github.com/user-attachments/assets/c82b7383-9072-4c87-ab0c-248d76ed9dbc" />
-<img width="743" height="483" alt="image" src="https://github.com/user-attachments/assets/945cc301-dc71-436d-98f5-64e68c29ae68" />
+<img width="1442" height="822" alt="image" src="https://github.com/user-attachments/assets/cea4bd54-59e6-400e-bc23-f06080eae74e" />
+<img width="1304" height="727" alt="image" src="https://github.com/user-attachments/assets/e1dbfe37-6cc9-47f9-8be7-1614a64fa2a0" />
+<img width="899" height="632" alt="image" src="https://github.com/user-attachments/assets/efb8f3bd-4e82-4517-b8d1-8dfa80851a77" />
+<img width="790" height="469" alt="image" src="https://github.com/user-attachments/assets/ec3b1c35-05e4-4ad1-ab33-2d9de6049a9f" />
+<img width="593" height="577" alt="image" src="https://github.com/user-attachments/assets/8d6f246f-9789-4023-8b06-ddce28d1e445" />
+
+
+
+
+
 
 The schematic composes a well organized layout of each system in the device, ranging from power management to the microcontroller itself. This lays the ideal blueprint for the PCB.
 
