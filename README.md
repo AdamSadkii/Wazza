@@ -69,7 +69,10 @@ The power system (powered by a USB-C component, is the base component of the who
 <img width="206" height="572" alt="image" src="https://github.com/user-attachments/assets/113b6360-1a48-456d-85c0-1affa5b1b53c" />
 <img width="371" height="619" alt="image" src="https://github.com/user-attachments/assets/14644987-bfa5-4635-be3b-6f72694d8c23" />
 
-## Future Enhancements
+CAD STEP File: [Uploadinga Wand3 STEP file (1).step…]()
+
+
+## Future Enhancement
 
 Potential improvements include on-device machine learning for gesture recognition to reduce API latency, integration with additional sensors like IMUs or proximity detectors, wireless charging capability, and support for custom gesture training. The modular design allows for easy hardware upgrades without redesigning the entire system.
 
