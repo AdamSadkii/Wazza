@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Wazza")(type "KiCad")(uri "${KIPRJMOD}/Wazza.kicad_sym")(options "")(descr "Wazza reconstructed symbols"))
+)

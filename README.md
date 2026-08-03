@@ -29,6 +29,7 @@ Folders you care about:
 - `frontend/` = dashboard
 - `backend/` = python server + AI
 - `firmware/` = ESP32 code
+- `hardware/` = KiCad schematics + PCB, Gerbers, enclosure STEP, wiring/assembly docs
 
 ## Run it on your PC
 

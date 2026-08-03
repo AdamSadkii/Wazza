@@ -1,0 +1,256 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "a7afd648-a7b6-4557-81e8-c1982e0e6ea4")
+	(paper "A3")
+	(title_block
+		(title "Wazza Root")
+		(date "2026-08-03")
+		(rev "1")
+		(company "Wazza")
+		(comment 1 "Reconstructed from GitHub journal schematic screenshots + BOM.md")
+	)
+	(lib_symbols)
+	(text "Wazza schematic reconstruction. Open this file in KiCad 10. See SCHEMATIC_NOTES.md"
+		(exclude_from_sim no)
+		(at 25.4 20.32 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d7d3ef7-540d-4b4e-bfa1-0323fe203e2a")
+	)
+	(sheet
+		(at 157.48 40.64)
+		(size 40.64 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "28562a81-b94e-46aa-a498-af56cd4591b2")
+		(property "Sheetname" "03_Sensors"
+			(at 157.48 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "03_sensors.kicad_sch"
+			(at 157.48 66.5476 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "wazza"
+				(path "/a7afd648-a7b6-4557-81e8-c1982e0e6ea4"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 91.44 101.6)
+		(size 40.64 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "3324d7ec-415b-495d-9f53-9aa71a2820fb")
+		(property "Sheetname" "05_LEDs_Buttons"
+			(at 91.44 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "05_leds_buttons.kicad_sch"
+			(at 91.44 127.5076 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "wazza"
+				(path "/a7afd648-a7b6-4557-81e8-c1982e0e6ea4"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 101.6)
+		(size 40.64 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "865aec01-f760-49f9-a90b-7a1f02ff27c0")
+		(property "Sheetname" "04_Audio"
+			(at 25.4 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "04_audio.kicad_sch"
+			(at 25.4 127.5076 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "wazza"
+				(path "/a7afd648-a7b6-4557-81e8-c1982e0e6ea4"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 40.64)
+		(size 40.64 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a52dfaaa-5360-4556-8153-0585dd23b99b")
+		(property "Sheetname" "01_Power"
+			(at 25.4 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "01_power.kicad_sch"
+			(at 25.4 66.5476 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "wazza"
+				(path "/a7afd648-a7b6-4557-81e8-c1982e0e6ea4"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 91.44 40.64)
+		(size 40.64 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e07f0fe6-e204-417c-984f-ada00275c91f")
+		(property "Sheetname" "02_MCU"
+			(at 91.44 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "02_mcu.kicad_sch"
+			(at 91.44 66.5476 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "wazza"
+				(path "/a7afd648-a7b6-4557-81e8-c1982e0e6ea4"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
