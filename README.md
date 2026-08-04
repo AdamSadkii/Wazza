@@ -71,8 +71,9 @@ The power system (powered by a USB-C component, is the base component of the who
 
 ## PCB
 
-<img width="206" height="572" alt="image" src="https://github.com/user-attachments/assets/113b6360-1a48-456d-85c0-1affa5b1b53c" />
-<img width="371" height="619" alt="image" src="https://github.com/user-attachments/assets/14644987-bfa5-4635-be3b-6f72694d8c23" />
+<img width="1043" height="316" alt="image" src="https://github.com/user-attachments/assets/0a058ee3-334f-4758-b856-4e73d7dcc238" />
+<img width="922" height="218" alt="image" src="https://github.com/user-attachments/assets/4057eefd-50d1-4266-bf20-1f22564cc0ae" />
+
 
 CAD STEP File: [Uploadinga Wand3 STEP file (1).step…]()
 
