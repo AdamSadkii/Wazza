@@ -29,7 +29,6 @@ Folders you care about:
 - `frontend/` = dashboard
 - `backend/` = python server + AI
 - `firmware/` = ESP32 code
-- `hardware/` = KiCad schematics + PCB, Gerbers, enclosure STEP, wiring/assembly docs
 
 ## Run it on your PC
 
@@ -54,16 +53,12 @@ Optional AI:
 
 ## Schematic
 
-<img width="1442" height="822" alt="image" src="https://github.com/user-attachments/assets/cea4bd54-59e6-400e-bc23-f06080eae74e" />
-<img width="1304" height="727" alt="image" src="https://github.com/user-attachments/assets/e1dbfe37-6cc9-47f9-8be7-1614a64fa2a0" />
-<img width="899" height="632" alt="image" src="https://github.com/user-attachments/assets/efb8f3bd-4e82-4517-b8d1-8dfa80851a77" />
-<img width="790" height="469" alt="image" src="https://github.com/user-attachments/assets/ec3b1c35-05e4-4ad1-ab33-2d9de6049a9f" />
-<img width="593" height="577" alt="image" src="https://github.com/user-attachments/assets/8d6f246f-9789-4023-8b06-ddce28d1e445" />
-
-
-
-
-
+<img width="711" height="301" alt="image" src="https://github.com/user-attachments/assets/1569244d-4e65-4fde-bfbe-05a0b9a3806f" />
+<img width="802" height="427" alt="image" src="https://github.com/user-attachments/assets/81efa213-27a1-4943-a675-421c33ea0701" />
+<img width="796" height="388" alt="image" src="https://github.com/user-attachments/assets/ba185da1-e040-45e8-b859-ee668cf3fa19" />
+<img width="586" height="562" alt="image" src="https://github.com/user-attachments/assets/6b969f1c-960b-40bd-b3f9-83a89c678b7d" />
+<img width="402" height="288" alt="image" src="https://github.com/user-attachments/assets/c82b7383-9072-4c87-ab0c-248d76ed9dbc" />
+<img width="743" height="483" alt="image" src="https://github.com/user-attachments/assets/945cc301-dc71-436d-98f5-64e68c29ae68" />
 
 The schematic composes a well organized layout of each system in the device, ranging from power management to the microcontroller itself. This lays the ideal blueprint for the PCB.
 
@@ -75,10 +70,7 @@ The power system (powered by a USB-C component, is the base component of the who
 <img width="922" height="218" alt="image" src="https://github.com/user-attachments/assets/4057eefd-50d1-4266-bf20-1f22564cc0ae" />
 
 
-CAD STEP File: [Uploadinga Wand3 STEP file (1).step…]()
-
-
-## Future Enhancement
+## Future Enhancements
 
 Potential improvements include on-device machine learning for gesture recognition to reduce API latency, integration with additional sensors like IMUs or proximity detectors, wireless charging capability, and support for custom gesture training. The modular design allows for easy hardware upgrades without redesigning the entire system.
 
@@ -102,7 +94,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-
-## USED CURSOR TO CODE VIA API KEYS AND PUSH THIS ON GITHUB AT A FASTER PACE.
