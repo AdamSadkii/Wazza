@@ -33,5 +33,6 @@ CC1/CC2 each have 5.1k to GND. PROG uses 2k to GND.
 
 ## Fabrication outputs
 
-Gerbers + drill: `hardware/gerbers/`  
-PCB preview: `hardware/wiring/pcb_preview.png`
+Gerbers + drill: `hardware/gerbers/` (zip: `wazza_gerbers.zip`)  
+PCB preview: `hardware/wiring/pcb_preview.png`  
+Routed render: `hardware/wiring/pcb_routed.png`

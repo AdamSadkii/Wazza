@@ -1,0 +1,11 @@
+# Local / generated — do not commit
+kicad/_tools/
+kicad/__pycache__/
+kicad/*.dsn
+kicad/*.ses
+kicad/*.rules
+kicad/freerouting.json
+kicad/fr_run.*
+kicad/wazza_drc.json
+kicad/wazza.net
+_refs/
