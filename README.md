@@ -84,6 +84,7 @@ The project includes complete KiCAD schematic files organized by functional modu
 
 ## Thank you.
 A big thanks to Nesh, Keam, and Yahya for being part of the process the whole way. Without them I don't think I would've been able to make it as far.
+deduct 2 hrs
 
 ## License: MIT
 
